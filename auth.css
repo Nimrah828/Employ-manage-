@@ -1,0 +1,651 @@
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background: #000;
+
+    color: white;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =================================
+   BACKGROUND
+================================= */
+
+.background {
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    background: #000;
+
+    z-index: -1;
+}
+
+
+/* Purple glow */
+
+.glow-one {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -200px;
+    left: -150px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 0, 230, 0.18),
+            transparent 70%
+        );
+
+    filter: blur(40px);
+}
+
+
+/* Blue glow */
+
+.glow-two {
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    right: -200px;
+    bottom: -250px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 150, 255, 0.18),
+            transparent 70%
+        );
+
+    filter: blur(50px);
+}
+
+
+/* Grid */
+
+.grid {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent
+        );
+}
+
+
+/* =================================
+   BACK BUTTON
+================================= */
+
+.back-button {
+
+    position: fixed;
+
+    top: 30px;
+    left: 40px;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+
+    z-index: 10;
+}
+
+
+.back-button:hover {
+
+    color: white;
+
+    transform: translateX(-3px);
+}
+
+
+/* =================================
+   AUTH WRAPPER
+================================= */
+
+.auth-wrapper {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* =================================
+   AUTH CARD
+================================= */
+
+.auth-card {
+
+    width: 450px;
+
+    max-width: 100%;
+
+    padding: 42px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(12, 12, 18, 0.88);
+
+    border:
+        1px solid rgba(255,255,255,0.09);
+
+    box-shadow:
+
+        0 25px 80px
+        rgba(0,0,0,0.65),
+
+        0 0 50px
+        rgba(100,50,255,0.08);
+
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
+}
+
+
+/* =================================
+   LOGO
+================================= */
+
+.auth-logo {
+
+    text-align: center;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 30px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff00dd,
+            #8b5cf6,
+            #00bfff
+        );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.auth-heading {
+
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+
+.auth-heading h1 {
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+
+.auth-heading p {
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =================================
+   TABS
+================================= */
+
+.tabs {
+
+    display: flex;
+
+    width: 100%;
+
+    padding: 5px;
+
+    background: #08080d;
+
+    border-radius: 9px;
+
+    margin-bottom: 25px;
+
+    border:
+        1px solid rgba(255,255,255,0.05);
+}
+
+
+.tab {
+
+    width: 50%;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.tab.active {
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #244fc0,
+            #7549d7
+        );
+
+    box-shadow:
+        0 5px 20px
+        rgba(70,70,255,0.2);
+}
+
+
+/* =================================
+   FORM
+================================= */
+
+.auth-form {
+
+    display: block;
+}
+
+
+.hidden {
+
+    display: none;
+}
+
+
+/* =================================
+   INPUT
+================================= */
+
+.input-group {
+
+    margin-bottom: 19px;
+}
+
+
+.input-group label {
+
+    display: block;
+
+    color: #c0c0c0;
+
+    font-size: 12px;
+
+    margin-bottom: 8px;
+}
+
+
+.input-group input {
+
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 14px;
+
+    color: white;
+
+    background: #08080d;
+
+    border:
+        1px solid #252530;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+
+.input-group input::placeholder {
+
+    color: #555;
+}
+
+
+.input-group input:focus {
+
+    border-color: #6655dc;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(100,80,220,0.1),
+
+        0 0 20px
+        rgba(100,80,220,0.08);
+}
+
+
+/* =================================
+   FORM OPTIONS
+================================= */
+
+.form-options {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 4px 0 23px;
+
+    font-size: 11px;
+}
+
+
+.form-options a {
+
+    color: #8f79ff;
+
+    text-decoration: none;
+}
+
+
+.form-options a:hover {
+
+    color: #b5a7ff;
+}
+
+
+.remember {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+
+.remember input {
+
+    accent-color: #6755db;
+}
+
+
+/* =================================
+   TERMS
+================================= */
+
+.terms {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    margin: 4px 0 22px;
+
+    cursor: pointer;
+}
+
+
+.terms input {
+
+    margin-top: 2px;
+
+    accent-color: #6755db;
+}
+
+
+.terms a {
+
+    color: #927dff;
+
+    text-decoration: none;
+}
+
+
+/* =================================
+   SUBMIT BUTTON
+================================= */
+
+.submit-button {
+
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            100deg,
+            #2358ce,
+            #734bd6
+        );
+
+    box-shadow:
+        0 8px 25px
+        rgba(60,70,220,0.2);
+
+    transition: 0.3s;
+}
+
+
+.submit-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 35px
+        rgba(80,70,230,0.4);
+}
+
+
+.submit-button:active {
+
+    transform: translateY(0);
+}
+
+
+/* =================================
+   BOTTOM TEXT
+================================= */
+
+.bottom-text {
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 12px;
+
+    margin-top: 22px;
+}
+
+
+.bottom-text button {
+
+    border: none;
+
+    background: none;
+
+    color: #927dff;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+.bottom-text button:hover {
+
+    color: #b7aaff;
+
+    text-decoration: underline;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .back-button {
+
+        top: 20px;
+
+        left: 20px;
+
+        font-size: 12px;
+    }
+
+
+    .auth-wrapper {
+
+        padding: 70px 18px 30px;
+    }
+
+
+    .auth-card {
+
+        padding: 30px 22px;
+
+        border-radius: 15px;
+    }
+
+
+    .auth-heading h1 {
+
+        font-size: 26px;
+    }
+
+
+    .auth-heading p {
+
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .auth-card {
+
+        padding: 27px 18px;
+    }
+
+
+    .auth-heading h1 {
+
+        font-size: 24px;
+    }
+
+
+    .form-options {
+
+        font-size: 10px;
+    }
+}
