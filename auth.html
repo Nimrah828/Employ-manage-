@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login / Sign Up - Servodale</title>
+
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="grid"></div>
+    </div>
+
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-button">
+        ← Back
+    </a>
+
+
+    <!-- Auth Container -->
+    <div class="auth-wrapper">
+
+        <div class="auth-card">
+
+            <!-- Logo -->
+            <div class="auth-logo">
+                Servodale
+            </div>
+
+
+            <!-- Heading -->
+            <div class="auth-heading">
+
+                <h1 id="form-title">
+                    Welcome Back
+                </h1>
+
+                <p id="form-subtitle">
+                    Login to your account and continue
+                </p>
+
+            </div>
+
+
+            <!-- Login / Signup Tabs -->
+            <div class="tabs">
+
+                <button
+                    class="tab active"
+                    id="login-tab"
+                    onclick="showLogin()">
+                    Login
+                </button>
+
+                <button
+                    class="tab"
+                    id="signup-tab"
+                    onclick="showSignup()">
+                    Sign Up
+                </button>
+
+            </div>
+
+
+            <!-- ================= LOGIN FORM ================= -->
+
+            <form
+                id="login-form"
+                class="auth-form"
+                onsubmit="loginUser(event)">
+
+                <div class="input-group">
+
+                    <label for="login-email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="login-password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Enter your password"
+                        required>
+
+                </div>
+
+
+                <div class="form-options">
+
+                    <label class="remember">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a href="#">
+                        Forgot password?
+                    </a>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-button">
+
+                    Login
+
+                </button>
+
+
+                <p class="bottom-text">
+
+                    Don't have an account?
+
+                    <button
+                        type="button"
+                        onclick="showSignup()">
+
+                        Sign Up
+
+                    </button>
+
+                </p>
+
+            </form>
+
+
+            <!-- ================= SIGN UP FORM ================= -->
+
+            <form
+                id="signup-form"
+                class="auth-form hidden"
+                onsubmit="signupUser(event)">
+
+                <div class="input-group">
+
+                    <label for="signup-name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="signup-name"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="signup-email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="signup-email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="signup-password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="signup-password"
+                        placeholder="Create a password"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="confirm-password">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        placeholder="Confirm your password"
+                        required>
+
+                </div>
+
+
+                <label class="terms">
+
+                    <input
+                        type="checkbox"
+                        required>
+
+                    <span>
+                        I agree to the
+                        <a href="#">Terms & Conditions</a>
+                    </span>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="submit-button">
+
+                    Create Account
+
+                </button>
+
+
+                <p class="bottom-text">
+
+                    Already have an account?
+
+                    <button
+                        type="button"
+                        onclick="showLogin()">
+
+
+
+                        <a href="dashboard.html" class="btn primary-btn">
+                            Login
+
+          
+                    </button>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>
