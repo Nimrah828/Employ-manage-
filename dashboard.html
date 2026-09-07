@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Servodale</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="bg-glow purple-glow"></div>
+    <div class="bg-glow blue-glow"></div>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            S
+        </div>
+
+
+        <nav class="side-nav">
+
+            <a href="#" class="side-link active">
+                <span>⌂</span>
+                <p>Dashboard</p>
+            </a>
+
+            <a href="#" class="side-link">
+                <span>♙</span>
+                <p>Profile</p>
+            </a>
+
+            <a href="#" class="side-link">
+                <span>◈</span>
+                <p>Analytics</p>
+            </a>
+
+            <a href="#" class="side-link">
+                <span>◫</span>
+                <p>Transactions</p>
+            </a>
+
+            <a href="#" class="side-link">
+                <span>▣</span>
+                <p>Products</p>
+            </a>
+
+            <a href="#" class="side-link">
+                <span>◒</span>
+                <p>Reports</p>
+            </a>
+
+            <a href="#" class="side-link">
+                <span>✉</span>
+                <p>Messages</p>
+            </a>
+
+            <a href="#" class="side-link">
+                <span>⚙</span>
+                <p>Settings</p>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="side-link">
+                <span>☆</span>
+                <p>Favourite</p>
+            </a>
+
+            <a href="#" class="side-link">
+                <span>↶</span>
+                <p>History</p>
+            </a>
+
+            <a href="index.html" class="side-link logout">
+                <span>↪</span>
+                <p>Logout</p>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="dashboard">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    placeholder="Search here..."
+                >
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <button class="notification">
+                    ♧
+                    <i></i>
+                </button>
+
+                <div class="avatar">
+                    U
+                </div>
+
+                <span class="arrow">
+                   ⌄
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content">
+
+            <div class="welcome">
+
+                <div>
+                    <p class="small-title">
+                        Overview
+                    </p>
+
+                    <h1>
+                        Welcome back 👋
+                    </h1>
+
+                    <p class="description">
+                        Here's what's happening with your blockchain today.
+                    </p>
+                </div>
+
+                <button class="date-button">
+                    This Month ▾
+                </button>
+
+            </div>
+
+
+            <!-- ================= STAT CARDS ================= -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        ◈
+                    </div>
+
+                    <div>
+                        <p>Total Balance</p>
+
+                        <h2>$35,842</h2>
+
+                        <span class="positive">
+                            ↑ 12.5%
+                        </span>
+
+                        <small>
+                            vs last month
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        ₿
+                    </div>
+
+                    <div>
+                        <p>Transactions</p>
+
+                        <h2>1,284</h2>
+
+                        <span class="positive">
+                            ↑ 8.2%
+                        </span>
+
+                        <small>
+                            vs last month
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon cyan">
+                        ◉
+                    </div>
+
+                    <div>
+                        <p>Active Nodes</p>
+
+                        <h2>428</h2>
+
+                        <span class="positive">
+                            ↑ 5.4%
+                        </span>
+
+                        <small>
+                            network growth
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon pink">
+                        ⚡
+                    </div>
+
+                    <div>
+                        <p>AI Requests</p>
+
+                        <h2>8,642</h2>
+
+                        <span class="positive">
+                            ↑ 18.7%
+                        </span>
+
+                        <small>
+                            this month
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CHART + LEVEL ================= -->
+
+            <div class="main-grid">
+
+
+                <!-- Revenue Chart -->
+
+                <div class="panel revenue-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Network Activity</h3>
+
+                            <p>
+                                Blockchain activity summary
+                            </p>
+                        </div>
+
+                        <button class="mini-button">
+                            7 Days ▾
+                        </button>
+
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div class="y-labels">
+                            <span>1000</span>
+                            <span>800</span>
+                            <span>600</span>
+                            <span>400</span>
+                            <span>200</span>
+                            <span>0</span>
+                        </div>
+
+
+                        <div class="chart-area">
+
+                            <div class="grid-line line1"></div>
+                            <div class="grid-line line2"></div>
+                            <div class="grid-line line3"></div>
+                            <div class="grid-line line4"></div>
+                            <div class="grid-line line5"></div>
+
+
+                            <svg
+                                class="activity-chart"
+                                viewBox="0 0 700 260"
+                                preserveAspectRatio="none"
+                            >
+
+                                <defs>
+
+                                    <linearGradient
+                                        id="chartGradient"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+
+                                        <stop
+                                            offset="0%"
+                                            stop-color="#00d9ff"
+                                            stop-opacity=".55"
+                                        />
+
+                                        <stop
+                                            offset="100%"
+                                            stop-color="#9d36ff"
+                                            stop-opacity=".02"
+                                        />
+
+                                    </linearGradient>
+
+                                    <filter id="glow">
+
+                                        <feGaussianBlur
+                                            stdDeviation="3"
+                                            result="coloredBlur"
+                                        />
+
+                                        <feMerge>
+
+                                            <feMergeNode
+                                                in="coloredBlur"
+                                            />
+
+                                            <feMergeNode
+                                                in="SourceGraphic"
+                                            />
+
+                                        </feMerge>
+
+                                    </filter>
+
+                                </defs>
+
+
+                                <path
+                                    class="chart-fill"
+                                    d="
+                                    M0,210
+                                    L45,185
+                                    L90,195
+                                    L135,130
+                                    L180,155
+                                    L225,120
+                                    L270,145
+                                    L315,85
+                                    L360,110
+                                    L405,55
+                                    L450,95
+                                    L495,72
+                                    L540,115
+                                    L585,90
+                                    L630,135
+                                    L675,80
+                                    L700,100
+                                    L700,260
+                                    L0,260
+                                    Z
+                                    "
+                                />
+
+
+                                <path
+                                    class="chart-line"
+                                    d="
+                                    M0,210
+                                    L45,185
+                                    L90,195
+                                    L135,130
+                                    L180,155
+                                    L225,120
+                                    L270,145
+                                    L315,85
+                                    L360,110
+                                    L405,55
+                                    L450,95
+                                    L495,72
+                                    L540,115
+                                    L585,90
+                                    L630,135
+                                    L675,80
+                                    L700,100
+                                    "
+                                />
+
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-days">
+
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Network Health -->
+
+                <div class="panel health-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Network Health</h3>
+
+                            <p>
+                                Current performance
+                            </p>
+                        </div>
+
+                        <span class="live">
+                            ● LIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="health-score">
+
+                        <div class="circle">
+
+                            <div class="circle-inner">
+
+                                <strong>96%</strong>
+
+                                <span>Excellent</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="health-info">
+
+                        <div>
+                            <span class="dot cyan-dot"></span>
+                            Network
+                            <strong>98%</strong>
+                        </div>
+
+                        <div>
+                            <span class="dot purple-dot"></span>
+                            AI Services
+                            <strong>94%</strong>
+                        </div>
+
+                        <div>
+                            <span class="dot blue-dot"></span>
+                            Security
+                            <strong>97%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= BOTTOM ================= -->
+
+            <div class="bottom-grid">
+
+
+                <!-- Transactions -->
+
+                <div class="panel transactions">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Recent Transactions</h3>
+
+                            <p>
+                                Latest blockchain activity
+                            </p>
+                        </div>
+
+                        <a href="#">
+                            View all
+                        </a>
+
+                    </div>
+
+
+                    <div class="table">
+
+                        <div class="table-head">
+
+                            <span>Transaction</span>
+                            <span>Type</span>
+                            <span>Status</span>
+                            <span>Amount</span>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <div class="transaction-name">
+
+                                <div class="transaction-icon purple">
+                                    ◈
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        0x7A3...92F
+                                    </strong>
+
+                                    <small>
+                                        2 min ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+                            <span>Transfer</span>
+
+                            <span class="status success">
+                                Completed
+                            </span>
+
+                            <strong>
+                                +$2,450
+                            </strong>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <div class="transaction-name">
+
+                                <div class="transaction-icon blue">
+                                    ₿
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        0xB42...17A
+                                    </strong>
+
+                                    <small>
+                                        15 min ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+                            <span>AI Service</span>
+
+                            <span class="status success">
+                                Completed
+                            </span>
+
+                            <strong>
+                                +$820
+                            </strong>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <div class="transaction-name">
+
+                                <div class="transaction-icon cyan">
+                                    ◉
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        0x91C...55D
+                                    </strong>
+
+                                    <small>
+                                        42 min ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+                            <span>Staking</span>
+
+                            <span class="status pending">
+                                Pending
+                            </span>
+
+                            <strong>
+                                +$1,280
+                            </strong>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <div class="transaction-name">
+
+                                <div class="transaction-icon pink">
+                                    ⚡
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        0x63D...821
+                                    </strong>
+
+                                    <small>
+                                        1 hour ago
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <span>Network</span>
+
+                            <span class="status success">
+                                Completed
+                            </span>
+
+                            <strong>
+                                +$540
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Actions -->
+
+                <div class="panel quick-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Quick Actions</h3>
+
+                            <p>
+                                Manage your account
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-actions">
+
+                        <button>
+                            <span class="qa-icon purple">+</span>
+                            <div>
+                                <strong>Send</strong>
+                                <small>Transfer assets</small>
+                            </div>
+                        </button>
+
+
+                        <button>
+                            <span class="qa-icon cyan">↓</span>
+                            <div>
+                                <strong>Receive</strong>
+                                <small>Get assets</small>
+                            </div>
+                        </button>
+
+
+                        <button>
+                            <span class="qa-icon blue">◈</span>
+                            <div>
+                                <strong>Stake</strong>
+                                <small>Earn rewards</small>
+                            </div>
+                        </button>
+
+
+                        <button>
+                            <span class="qa-icon pink">✦</span>
+                            <div>
+                                <strong>AI Tools</strong>
+                                <small>Explore AI</small>
+                            </div>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
