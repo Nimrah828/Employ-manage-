@@ -1,0 +1,700 @@
+/* ==============================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #000;
+
+    color: #fff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* ==============================
+   NAVBAR
+================================= */
+
+.navbar {
+
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+
+    background: #000;
+
+    position: relative;
+    z-index: 20;
+}
+
+
+/* Logo */
+
+.logo {
+
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* Navigation */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.nav-links a {
+
+    color: #9b9b9b;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition: all 0.3s ease;
+}
+
+
+.nav-links a:hover {
+
+    color: #fff;
+}
+
+
+/* Right icons */
+
+.nav-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.nav-icons span {
+
+    color: #fff;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.nav-icons span:hover {
+
+    color: #a855f7;
+
+}
+
+
+/* ==============================
+   HERO SECTION
+================================= */
+
+.hero {
+
+    position: relative;
+
+    width: 100%;
+
+    height: calc(100vh - 72px);
+
+    min-height: 650px;
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    padding-top: 95px;
+
+    overflow: hidden;
+
+    background: #000;
+}
+
+
+/* ==============================
+   HERO CONTENT
+================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 10;
+
+    text-align: center;
+
+    width: 100%;
+
+}
+
+
+/* Main heading */
+
+.hero-content h1 {
+
+    font-size: 52px;
+
+    line-height: 1.12;
+
+    font-weight: 500;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 22px;
+
+    color: #fff;
+}
+
+
+/* Gradient first line */
+
+.hero-content h1 span {
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #ff00e6 0%,
+            #c54cff 35%,
+            #6366ff 70%,
+            #00b7ff 100%
+        );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Paragraph */
+
+.hero-content p {
+
+    color: #858585;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   BUTTONS
+================================= */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.btn {
+
+    width: 105px;
+
+    height: 38px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Get Started */
+
+.primary-btn {
+
+    color: #fff;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #1d55c9,
+            #437cf0
+        );
+
+    box-shadow:
+        0 0 15px
+        rgba(40, 100, 255, 0.2);
+}
+
+
+.primary-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 25px
+        rgba(40, 100, 255, 0.55);
+}
+
+
+/* Ecosystem */
+
+.secondary-btn {
+
+    color: #fff;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #4a557c,
+            #a58fd0
+        );
+
+    box-shadow:
+        0 0 15px
+        rgba(130, 120, 200, 0.15);
+}
+
+
+.secondary-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 25px
+        rgba(150, 120, 220, 0.4);
+}
+
+
+/* ==============================
+   WAVE CONTAINER
+================================= */
+
+.wave-container {
+
+    position: absolute;
+
+    width: 115%;
+
+    height: 440px;
+
+    left: 50%;
+
+    bottom: -120px;
+
+    transform: translateX(-50%);
+
+    overflow: hidden;
+
+    perspective: 800px;
+}
+
+
+/* ==============================
+   GRID LINES
+================================= */
+
+.grid-lines {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 320px;
+
+    left: 0;
+
+    bottom: 30px;
+
+    transform:
+        perspective(500px)
+        rotateX(62deg)
+        rotateZ(-7deg)
+        scale(1.15);
+
+    transform-origin: center;
+
+    background-size: 15px 15px;
+
+    border-radius: 50%;
+
+    opacity: 0.9;
+}
+
+
+/* Purple section */
+
+.grid-lines.purple {
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(255, 0, 255, 0.9) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            0deg,
+            rgba(255, 0, 255, 0.75) 1px,
+            transparent 1px
+        );
+
+    width: 75%;
+
+    left: -12%;
+
+    top: 105px;
+
+    transform:
+        perspective(500px)
+        rotateX(63deg)
+        rotateZ(-12deg)
+        scale(1.2);
+
+    filter:
+        drop-shadow(
+            0 0 5px
+            rgba(255, 0, 255, 0.5)
+        );
+}
+
+
+/* Blue section */
+
+.grid-lines.blue {
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(100, 60, 255, 0.85) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            0deg,
+            rgba(80, 80, 255, 0.7) 1px,
+            transparent 1px
+        );
+
+    width: 80%;
+
+    left: 15%;
+
+    top: 75px;
+
+    transform:
+        perspective(500px)
+        rotateX(63deg)
+        rotateZ(-5deg)
+        scale(1.2);
+
+    filter:
+        drop-shadow(
+            0 0 5px
+            rgba(70, 80, 255, 0.45)
+        );
+}
+
+
+/* Cyan section */
+
+.grid-lines.cyan {
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(0, 220, 255, 0.75) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            0deg,
+            rgba(0, 180, 255, 0.55) 1px,
+            transparent 1px
+        );
+
+    width: 75%;
+
+    right: -12%;
+
+    left: auto;
+
+    top: 25px;
+
+    transform:
+        perspective(500px)
+        rotateX(63deg)
+        rotateZ(5deg)
+        scale(1.2);
+
+    filter:
+        drop-shadow(
+            0 0 6px
+            rgba(0, 200, 255, 0.5)
+        );
+}
+
+
+/* ==============================
+   DARK GRADIENT OVER WAVE
+================================= */
+
+.wave-container::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            #000 0%,
+            transparent 25%,
+            transparent 75%,
+            #000 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/* ==============================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        padding: 0 30px;
+    }
+
+
+    .nav-links {
+
+        gap: 20px;
+    }
+
+
+    .nav-links a {
+
+        font-size: 10px;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 46px;
+    }
+
+
+    .hero-content p {
+
+        font-size: 11px;
+    }
+}
+
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        height: 65px;
+
+        padding: 0 22px;
+    }
+
+
+    .nav-links {
+
+        display: none;
+    }
+
+
+    .logo {
+
+        font-size: 13px;
+    }
+
+
+    .nav-icons {
+
+        gap: 8px;
+    }
+
+
+    .hero {
+
+        height: calc(100vh - 65px);
+
+        min-height: 600px;
+
+        padding-top: 80px;
+    }
+
+
+    .hero-content {
+
+        padding: 0 18px;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 40px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .hero-content p {
+
+        font-size: 10px;
+
+        line-height: 1.7;
+    }
+
+
+    .hero-content p br {
+
+        display: none;
+    }
+
+
+    .btn {
+
+        width: 100px;
+
+        height: 36px;
+
+        font-size: 10px;
+    }
+
+
+    .wave-container {
+
+        width: 170%;
+
+        bottom: -90px;
+    }
+}
+
+
+/* ==============================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 450px) {
+
+    .hero {
+
+        padding-top: 70px;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 33px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .hero-content p {
+
+        font-size: 9px;
+
+        padding: 0 5px;
+    }
+
+
+    .buttons {
+
+        gap: 7px;
+    }
+
+
+    .btn {
+
+        width: 95px;
+
+        height: 35px;
+    }
+}
