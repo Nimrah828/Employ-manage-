@@ -149,3 +149,24 @@ function signupUser(event) {
 
     window.location.href = "./dashboard.html";
 }
+
+const themeToggle = document.getElementById("themeToggle");
+
+function setTheme(theme) {
+    document.body.classList.toggle("light", theme === "light");
+    themeToggle.textContent = theme === "light" ? "🌙" : "☀️";
+    localStorage.setItem("theme", theme);
+}
+
+const savedTheme = localStorage.getItem("theme") || "dark";
+setTheme(savedTheme);
+
+themeToggle.addEventListener("click", () => {
+    const newTheme =
+        document.body.classList.contains("light")
+            ? "dark"
+            : "light";
+
+    setTheme(newTheme);
+});
+
