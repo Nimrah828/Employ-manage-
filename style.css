@@ -2,6 +2,49 @@
    RESET
 ================================= */
 
+:root {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #8b8b9a;
+  --card: #111111;
+  --button-text: #ffffff;
+}
+
+body.light {
+  --bg: #f7f8fc;
+  --text: #111111;
+  --muted: #5f6370;
+  --card: #ffffff;
+  --button-text: #ffffff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+p {
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card);
+}
+
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #ff00cc,
+    #8b5cf6,
+    #3b82f6
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 * {
     margin: 0;
     padding: 0;
