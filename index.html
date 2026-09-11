@@ -27,6 +27,12 @@
             <a href="#">Whitepaper</a>
         </nav>
 
+
+<button id="themeToggle">
+  ☀️
+</button>
+
+        
     </header>
 
 
@@ -78,11 +84,26 @@
 
     </main>
 
-
     <script>
         // Landing page JavaScript
 
 console.log("Servodale landing page loaded");
+
+
+
+
+        const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+
+  if (document.body.classList.contains("light")) {
+    toggle.textContent = "🌙";
+  } else {
+    toggle.textContent = "☀️";
+  }
+});
+
 
     </script>
 
